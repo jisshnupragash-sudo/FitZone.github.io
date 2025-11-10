@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register for Trial | FitZone</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/styles.css"/>
+
+  <style>
+    body {
+      /* Fades from a medium-dark grey (#333) at the top to a very dark grey/near-black (#1a1a1a) at the bottom */
+      background: linear-gradient(to bottom, #333333, #1a1a1a);
+      /* Ensures the gradient covers the full height of the viewport */
+      min-height: 100vh;
+      /* Set default text color to light for contrast against the dark background */
+      color: #f8f9fa; 
+    }
+    
+    /* Ensure section headings and form labels are white/light */
+    h2.text-center, .form-label {
+        color: #f8f9fa !important; 
+    }
+
+    /* Style the form area (the section container) */
+    .container {
+        /* Optional: Add a subtle background to the container for the form to stand out */
+        background-color: rgba(255, 255, 255, 0.05); /* Very slight white overlay */
+        padding: 30px;
+        border-radius: 10px;
+    }
+
+    /* Set the navbar background */
+    .navbar {
+        background-color: #4B0082 !important; /* Purple for consistency */
+    }
+    
+    /* Style the form controls for better dark mode aesthetics (optional) */
+    .form-control, .form-select {
+        background-color: #444; /* Darker input background */
+        color: #f8f9fa; /* Light text within inputs */
+        border: 1px solid #666; /* Light border */
+    }
+
+    /* Style the option text in the select dropdown */
+    .form-select option {
+        color: #212529; /* Ensures options in the dropdown are dark text on a light background for OS consistency */
+    }
+  </style>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">FitZone</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li> 
+        <li class="nav-item"><a class="nav-link" href="trainers.html">Trainers</a></li>
+        <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
+        <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="container my-5">
+  <h2 class="text-center mb-4">Register for a Trial Class</h2>
+  <form id="trialForm" class="needs-validation" novalidate>
+    <div class="mb-3">
+      <label for="name" class="form-label">Full Name</label>
+      <input type="text" class="form-control" id="name" required>
+      <div class="invalid-feedback">Please enter your name.</div>
+    </div>
+    
+    <div class="mb-3">
+      <label for="email" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="email" required>
+      <div class="invalid-feedback">Please enter a valid email.</div>
+    </div>
+    
+    <div class="mb-3">
+      <label for="time" class="form-label">Preferred Time</label>
+      <input type="time" class="form-control" id="time">
+      <div class="invalid-feedback">Please enter a time.</div>
+    </div>
+    
+    <div class="mb-3">
+      <label for="class" class="form-label">Preferred Class</label>
+      <select class="form-select" id="class" required>
+        <option value="">Choose...</option>
+        <option>Yoga</option>
+        <option>Zumba</option>
+        <option>Pilates</option>
+        <option>Personal Training</option>
+      </select>
+      <div class="invalid-feedback">Please select a class.</div>
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+  <div class="modal fade" id="successModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header"><h5 class="modal-title">Success</h5></div>
+        <div class="modal-body">Thank you for registering!</div>
+        <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Close</button></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/form-validation.js"></script>
+
+</body>
+</html>

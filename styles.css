@@ -1,0 +1,42 @@
+:root {
+  --primary-color: #4B0082;
+  --accent-color: #1A1A40;
+  --light-bg: #F3F0FF;
+  --text-light: #FFFFFF;
+}
+
+body {
+  background-color: var(--light-bg);
+  color: var(--accent-color);
+  font-family: 'Open Sans', sans-serif;
+}
+
+.navbar {
+  background-color: var(--primary-color);
+}
+
+footer {
+  background-color: var(--accent-color);
+  color: var(--text-light);
+}
+
+.btn {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+}
+
+.card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+

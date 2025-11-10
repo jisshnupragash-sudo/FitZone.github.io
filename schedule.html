@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weekly Schedule | FitZone</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/styles.css"/>
+
+  <style>
+    body {
+      /* Fades from a medium-dark grey (#333) at the top to a very dark grey/near-black (#1a1a1a) at the bottom */
+      background: linear-gradient(to bottom, #333333, #1a1a1a);
+      /* This ensures the gradient covers the full height of the viewport */
+      min-height: 100vh;
+      /* Set default text color to light for contrast against the dark background */
+      color: #f8f9fa; 
+    }
+    
+    /* Ensure section headings are visible against the dark gradient background */
+    h2.text-center {
+        color: #f8f9fa !important; /* White color for the heading */
+    }
+
+    /* Style the table for visibility against the dark background */
+    .table-bordered {
+        background-color: #ffffff; /* Use a white background for the table itself */
+        color: #212529; /* Dark text for readability on white background */
+        border-radius: 8px; /* Optional: Add rounded corners to the table */
+        overflow: hidden; /* Ensures borders/radius apply correctly */
+    }
+
+    /* Set the navbar background */
+    .navbar {
+        background-color: #4B0082 !important; /* Use the same purple as before for consistency */
+    }
+  </style>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">FitZone</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li> 
+        <li class="nav-item"><a class="nav-link" href="trainers.html">Trainers</a></li>
+        <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
+        <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="container my-5">
+  <h2 class="text-center mb-4">Weekly Schedule</h2>
+  <table class="table table-bordered">
+    <thead>
+      <tr><th>Day</th><th>Time</th><th>Class</th><th>Trainer</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Monday</td><td>7:00 AM</td><td>Yoga</td><td>Alex Tan</td></tr>
+      </tbody>
+  </table>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

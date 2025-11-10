@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FitZone Studio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/styles.css"/>
+  <style>
+    body {
+      /* Fades from a medium-dark grey (#333) at the top to a very dark grey/near-black (#1a1a1a) at the bottom */
+      background: linear-gradient(to bottom, #333333, #1a1a1a);
+      /* This ensures the gradient covers the full height of the viewport */
+      min-height: 100vh;
+      /* Adjust text on the body to white for better contrast */
+      color: #f8f9fa; 
+    }
+    /* Since we changed the background, let's update the sections/header for clarity */
+    .bg-light, .card {
+      background-color: #f8f9fa !important; /* Keep your main content sections light for contrast */
+      color: #212529;
+    }
+    header.bg-light {
+        border-bottom: 2px solid #4B0082; /* Add a subtle separator */
+    }
+    footer {
+        background-color: #1a1a1a; /* Make the footer dark */
+        color: #f8f9fa !important;
+    }
+    .navbar {
+        background-color: #4B0082 !important; /* Purple for consistency */
+    }
+    h2 {
+        color: #f8f9fa !important; /* Ensure section headers are visible */
+    }
+  </style>
+</head>
+<body>
+ <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #4B0082;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">FitZone</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li> 
+          <li class="nav-item"><a class="nav-link" href="trainers.html">Trainers</a></li>
+          <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
+          <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-light text-center py-5">
+    <h1 class="display-4" style="color: #4B0082;">Welcome to FitZone Studio</h1>
+    <p class="lead">Empowering your fitness journey with expert trainers and energizing programs.</p>
+  </header>
+
+  <section class="container my-5">
+    <h2 class="text-center mb-4" style="color: #1A1A40;">Our Programs</h2>
+    <div class="row g-4">
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="https://i.insider.com/6172edae4f281c001296a1e7?width=700" class="card-img-top" alt="Yoga">
+          <div class="card-body">
+            <h5 class="card-title">Yoga</h5>
+            <p class="card-text">Enhance flexibility and mindfulness with guided yoga sessions.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="https://www.fit19.com/hubfs/GallerySliderImages-804x526px-01.png" class="card-img-top" alt="Zumba">
+          <div class="card-body">
+            <h5 class="card-title">Zumba</h5>
+            <p class="card-text">Dance your way to fitness with high-energy Zumba classes.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="https://expatliving.sg/wp-content/uploads/2022/05/pilates.jpg" class="card-img-top" alt="Pilates">
+          <div class="card-body">
+            <h5 class="card-title">Pilates</h5>
+            <p class="card-text">Strengthen your core and improve posture with Pilates workouts.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="https://blog.nasm.org/hubfs/what-is-resistance-training.jpg" class="card-img-top" alt="Personal Training">
+          <div class="card-body">
+            <h5 class="card-title">Gym Training</h5>
+            <p class="card-text">Get customized fitness plans with one-on-one coaching.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center p-3 mt-5">
+    © 2025 FitZone Studio. Images from Unsplash and Pexels.
+  </footer>
+
+  <script src="
